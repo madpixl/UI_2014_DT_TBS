@@ -1,0 +1,1 @@
+<script src="/assets/components/picklist/picklist.js" type="text/javascript"></script>

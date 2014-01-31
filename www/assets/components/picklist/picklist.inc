@@ -1,0 +1,128 @@
+ <div id="multi-transfer-container">
+  <div id="source-container">
+    <h2 id="source-title">Available</h2>
+    <ul id="source-list">
+      <li>Accordion</li>
+      <li>Autocomplete</li>
+      <li>Button</li>
+      <li>Datepicker</li>
+      <li>Dialog</li>
+      <li>Progressbar</li>
+      <li>Slider</li>
+      <li>Tabs</li>
+    </ul>
+  </div>
+  <div id="transfer-buttons-container">
+    <div id="transfer-buttons">
+      <button id="add-button">Add<i></i></button>
+      <button id="add-all-button">Add All<i></i><i></i></button>
+      <button id="remove-button"><i></i>Remove</button>
+      <button id="remove-all-button"><i></i><i></i> Remove All</button>
+    </div>
+  </div>
+  <div id="target-container">
+    <h2 id="target-title">Selected</h2>
+    <ul id="target-list">
+    </ul>
+  </div>
+  
+  <!--  -->
+  <div id="reorder-buttons-container">
+    <div id="reorder-buttons">
+      <button id="move-up"><i></i>Move Up </button>
+      <button id="move-down"><i></i>Move Down </button>
+    </div>
+  </div>
+  <!--  --> 
+</div>
+<script>  
+     //initialize buttons
+    $("#source-list, #target-list").selectable(); 
+	  $("#add-button").click(add);
+	  $("#add-all-button").click(addAll);
+	  $("#remove-button").click(remove);
+	  $("#remove-all-button").click(removeAll);
+		$("#move-up").click(moveUp);	
+		$("#move-down").click(moveDown);
+		$("#reset-list").click(resetList);
+		  
+	   addHiglightPlugin();	  
+	 
+	function addHiglightPlugin() {
+	  $.fn.highlight = function() {
+	     return this
+		                 .addClass("li-transfer-highlight")
+		                 .removeClass("li-transfer-highlight",100);
+	  }
+	}
+	
+	function add() {
+		transfer($("#source-list li.ui-selected"));
+	}	
+	function addAll() {
+	  transfer($("#source-list li:visible"));
+	}
+	function transfer(listItems) {
+	  listItems.fadeOut(function() {
+	    $(this)
+		  .removeClass("ui-selected")
+		  .clone()
+		  .appendTo("#target-list")
+		  .fadeIn()
+		  .data("index", $("#source-list li").index($(this)))
+		  .highlight();
+	  });
+	}	
+	
+	function remove() {
+		$("#target-list li.ui-selected").fadeOut(function() {
+			$("#source-list li") 
+				.eq($(this).data("index"))
+				.removeClass("ui-selected")
+				.fadeIn()
+				.highlight();
+				
+		  $(this).remove();		
+		});	
+	}	
+	function removeAll() {
+	  $("#target-list li").fadeOut()
+	    .promise().done(function() {
+	      $("#target-list li").remove();
+		  $("#source-list li:hidden").fadeIn().highlight();
+	    });
+	}
+ 
+			
+		function moveUp() {
+				$("#target-list li.ui-selected").each(function() {
+					var listItem = $(this);
+					var listItemPosition = $("#target-list li").index(listItem) + 1;
+					
+					if (listItemPosition == 1) return false;
+					
+					listItem.insertBefore(listItem.prev());
+				});			
+		}
+		
+		function moveDown() {
+				var itemsCount = $("#target-list li").length;
+				
+				$($("#target-list li.ui-selected").get().reverse()).each(function() {
+					var listItem = $(this);
+					var listItemPosition = $("#target-list li").index(listItem) + 1;
+					
+					if (listItemPosition == itemsCount) return false;
+					
+					listItem.insertAfter(listItem.next());
+				});
+		}
+		
+		function resetList() { 
+			$("#target-list").html(originalItems);
+			$("#source-list").html(sourceList);
+		}
+			
+	</script>
+</body>
+</html>
