@@ -1,7 +1,7 @@
 <header>
     <div class="container">
       <div class="row">
-        <div class="col-xs-4 col-xs-offset-8">
+        <div class="col-xs-4 col-xs-offset-8 pull-right">
           <div class="site-search">
             <form>
               <input type="text" class="form-control" placeholder="Global Search" />

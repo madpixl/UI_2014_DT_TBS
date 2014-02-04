@@ -60,6 +60,7 @@ li
   padding: 0;
   list-style: none;
 }
+ 
 i
 {
   width: 0;
@@ -69,6 +70,8 @@ i
   display: inline-block;
   vertical-align: middle;
 }
+ 
+
 #multi-transfer-container
 {
   min-height: 400px;
@@ -107,16 +110,10 @@ i
 #target-title
 {
   background-color: #74b042;
-  background-image: -webkit-gradient(linear, left top, left bottom, from( #74b042), to( #56a00e));
-  background-image: -webkit-linear-gradient( #74b042, #56a00e);
-  background-image: -moz-linear-gradient( #74b042, #56a00e);
-  background-image: -ms-linear-gradient( #74b042, #56a00e);
-  background-image: -o-linear-gradient( #74b042, #56a00e);
-  background-image: linear-gradient( #74b042, #56a00e);
   -moz-box-shadow: 0 0 2px 2px #74b042;
   -webkit-box-shadow: 0 0 2px 2px#74b042;
   box-shadow: 0 0 1px 2px #74b042;
-  text-shadow: 0 1px 1px #335413;
+  
 }
 #source-list, #target-list
 {
@@ -130,14 +127,13 @@ i
 }
 #source-list li, #target-list li
 {
-  background-color: #f9f9f9;
-   
+  background-color: #f9f9f9; 
   border-bottom: 1px solid #ddd;
   color: #444;
   cursor: default;
   font-size: 16px;
   padding: 8px;
-  text-shadow: 0 1px 0 #fff;
+  
 }
 #target-list li
 {
@@ -145,19 +141,16 @@ i
 }
 #source-list li:hover, #target-list li:hover
 {
-  background-color: #f8f8f8;
-  background-image: -webkit-gradient(linear, left top, left bottom, from( #f8f8f8), to( #ddd));
-  
+  background-color: #f8f8f8; 
 }
 #source-list li.ui-selecting, #target-list li.ui-selecting
 {
-  background-color: #ddd; 
-  color: #fff;
+  background-color: #aaaaaa; 
+  color: #222222;
 }
 #source-list li.ui-selected, #target-list li.ui-selected
 {
   background-color: #888;
-   
   color: #fff;
 }
 /* end of source and target styles */
@@ -193,8 +186,7 @@ i
 }
 #add-button, #add-all-button
 {
-  background-color: #5ba600;
-   
+  background-color: #5ba600; 
   border: 1px solid #5ba600;
   border-radius: 5px;
   -moz-border-radius: 5px;
@@ -203,8 +195,7 @@ i
 }
 #remove-button, #remove-all-button
 {
-  background-color: #55aaaa;
-  
+  background-color: #55aaaa; 
   border: 1px solid #ec5604;
   border-radius: 5px;
   -moz-border-radius: 5px;
@@ -214,18 +205,18 @@ i
 /* end of transfer styles */
 
 
-/* transfer highlight style */
-
+/* transfer highlight style  
 #source-list .li-transfer-highlight, #target-list .li-transfer-highlight
+*/
+#source-list li:hover, #target-list li:hover
 {
-  background-color: #eee;
-  background-image: -webkit-gradient(linear, left top, left bottom, from( #eee), to( #ccc));
-  background-image: -webkit-linear-gradient( #eee, #ccc);
-  background-image: -moz-linear-gradient( #eee, #ccc);
-  background-image: -ms-linear-gradient( #eee, #ccc);
-  background-image: -o-linear-gradient( #eee, #ccc);
-  background-image: linear-gradient( #eee, #ccc);
+
+background-color:#ff4422;
+
+}
+ /* background-color: #eee; 
   color:#333333;
+  */
 }
 /* end of transfer highlight style */
 
@@ -276,13 +267,7 @@ i
 }
 #reorder-buttons button
 {
-  background-color: #5ba6ee;
-  background-image: -webkit-gradient(linear, left top, left bottom, from( #5ba600), to( #31a200));
-  background-image: -webkit-linear-gradient( #5ba600, #31a200);
-  background-image: -moz-linear-gradient( #5ba600, #31a200);
-  background-image: -ms-linear-gradient( #5ba600, #31a200);
-  background-image: -o-linear-gradient( #5ba600, #31a200);
-  background-image: linear-gradient( #5ba600, #31a200);
+  background-color: #5ba6ee; 
   border: 1px solid #5ba600;
   border-radius: 5px;
   -moz-border-radius: 5px;
