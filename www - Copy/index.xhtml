@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Dealertrack</title>
+<link rel="stylesheet" type="text/css" href="/assets/css/global.css" />
+<!--#include virtual="/assets/inc/global_js.inc" -->
+</head>
+<body>
+<div class="site">
+   <!--#include virtual="/assets/inc/nav_global.inc" -->
+   <!--#include virtual="/assets/inc/global_header.inc" -->
+  <section class="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2"> 
+          <!-- left nav goes here... -->
+          <!--#include virtual="/assets/inc/nav_secondary.inc" -->
+          <!-- end left nav --> 
+        </div>
+        <div class="col-xs-10">
+          <div class="main__content">
+            <h1>New Registration
+              <div class="pull-right small"> Tran ID 1234 | Saved </div>
+            </h1>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="panel">
+                  <div class="row">
+                    <div class="col-xs-10">
+                      <h4>Vehicle </h4>
+                    </div> 
+                  </div>
+                  <!-- content -->
+                  <div>
+                  <div class="clearfix col-xs-12">
+                    <h5 id="make-model-year"> Honda Civic 2009 Used</h5>
+                    <ul class="list-unstyled col-xs-4">
+                      <li id="color1">Red(Black)</li>
+                      <li id="axles">2 Axles-Gas</li>
+                      <li id="fuel">4TE46K39R096580</li>
+                    </ul>
+                    <ul class="list-unstyled col-xs-4">
+                      <li id="miles"> Milage(actual)77,342</li>
+                      <li id="taxloc">Garaged in Campbell</li>
+                      <li id="year">Emissions Exempt</li>
+                    </ul>
+                    <ul class="list-unstyled col-xs-4">
+                      <li id="miles">EVW 3,421</li>
+                      <li id="taxloc">MCO</li>
+                      <li id="year">CT Title 52723423 5/14/2010 Hold</li>
+                    </ul> 
+                </div>
+                    <!-- end summary section--> 
+                    <!-- edit section --> 
+                     <div class="clearfix col-xs-12">
+                    <div class="panel-toggle">
+                      <a href="#edit-vehicle" data-toggle="collapse" class="btn-link  panel-collapse collapse in collapsed">
+                         Edit Vehicle 
+                     </a>
+                     <hr />
+                    <div id="edit-vehicle" class="collapse"> 
+                      
+                        <div class="form-horizontal">
+                          <fieldset>
+                           <legend><h6>Edit Vehicle Information</h6></legend>
+                            <!-- Inquiry Input-->
+                            <div class="control-group vin-search">
+                              <label class="control-label" for="vin-lookup">VIN</label>
+                              <div class="input-group">
+                                <input type="text" class="form-control input-xlarge" placeholder="4T4BE46K39R096580"  />
+                                <button onclick="return false"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                             
+                            <div class="control-group">
+                              <label class="control-label" for="year">Year</label>
+                              <div class="controls">
+                                <input id="year" name="year" type="text" placeholder="2007" class="input-small" />
+                              </div>
+                            </div>
+                            <div class="control-group">
+                              <label class="control-label" for="make">Make</label>
+                              <div class="controls">
+                                <input id="make" name="make" type="text" placeholder="Honda" class="input-large" />
+                                <p class="help-block">Enter 3 or more letters</p>
+                              </div>
+                            </div>
+                            <div class="control-group">
+                              <label class="control-label" for="model">Model</label>
+                              <div class="controls">
+                                <input id="model" name="model" type="text" placeholder="Civic" class="input-large" />
+                              </div>
+                            </div>
+                            
+                            <!-- Select Basic -->
+                            <div class="control-group">
+                              <label class="control-label" for="selectbasic">Axles</label>
+                              <div class="controls">
+                                <select id="selectbasic" name="selectbasic" class="input-mini">
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                  <option>6</option>
+                                </select>
+                              </div>
+                            </div>
+                            
+                            <!-- Fuel -->
+                            <div class="control-group">
+                              <label class="control-label" for="selectbasic">Fuel</label>
+                              <div class="controls">
+                                <select id="selectbasic" name="selectbasic" class="input-medium">
+                                  <option>Gas</option>
+                                  <option>Diesel</option>
+                                  <option>Hybrid</option>
+                                  <option>Electric</option>
+                                  <option>Nuclear</option>
+                                </select>
+                              </div>
+                            </div>
+                            
+                            <!-- Colors -->
+                            <div class="control-group">
+                              <label class="control-label" for="selectbasic">Color 1</label>
+                              <div class="controls">
+                                <select id="selectbasic" name="selectbasic" class="input-large">
+                                  <option>Azure</option>
+                                  <option>Apricot</option>
+                                  <option>Beige</option>
+                                  <option>Blue</option>
+                                  <option>Brown</option>
+                                  <option>Black</option>
+                                  <option>Cyan</option>
+                                  <option>Cream</option>
+                                  <option>Dark Green</option>
+                                  <option>Dark Blue</option>
+                                  <option>Dark Red</option>
+                                  <option>Eggshell</option>
+                                  <option>Fuchia</option>
+                                  <option>Light Blue</option>
+                                  <option>Yellow</option>
+                                </select>
+                              </div>
+                            </div>
+                            
+                            <!-- Select Basic -->
+                            <div class="control-group">
+                              <label class="control-label" for="selectbasic">Color 2</label>
+                              <div class="controls">
+                                <select id="selectbasic" name="selectbasic" class="input-large">
+                                  <option>Black</option>
+                                </select>
+                              </div>
+                            </div>
+                            
+                            <!-- Select Basic -->
+                            <div class="control-group">
+                              <label class="control-label" for="selectbasic">Odometer Status</label>
+                              <div class="controls">
+                                <select id="selectbasic" name="selectbasic" class="input-large">
+                                  <option>Option one</option>
+                                  <option>Option two</option>
+                                </select>
+                              </div>
+                            </div>
+                            <!-- Text input-->
+                            <div class="control-group">
+                              <label class="control-label" for="textinput">Mileage</label>
+                              <div class="controls">
+                                <input id="textinput" name="textinput" type="text" placeholder="77,000" class="input-medium" />
+                              </div>
+                            </div>
+                            <!-- Select Basic -->
+                            <div class="control-group">
+                              <label class="control-label" for="selectbasic">Garaged Juris.</label>
+                              <div class="controls">
+                                <select id="selectbasic" name="selectbasic" class="input-large">
+                                  <option>Campbell</option>
+                                  <option>Option two</option>
+                                </select>
+                              </div>
+                            </div>
+                            
+                            <!-- Select Basic -->
+                            <div class="control-group">
+                              <label class="control-label" for="selectbasic">Exemption</label>
+                              <div class="controls">
+                                <select id="selectbasic" name="selectbasic" class="input-large">
+                                  <option>N/A</option>
+                                </select>
+                              </div>
+                            </div>
+                            
+                            <!-- Text input-->
+                            <div class="control-group">
+                              <label class="control-label" for="textinput">EVW</label>
+                              <div class="controls">
+                                <input id="textinput" name="textinput" type="text" placeholder="" class="input-small" />
+                              </div>
+                            </div>
+                            <!-- Select Basic -->
+                            <div class="control-group">
+                              <label class="control-label" for="selectbasic">HVUT</label>
+                              <div class="controls">
+                                <select id="selectbasic" name="selectbasic" class="input-large">
+                                  <option>N/A</option>
+                                </select>
+                              </div>
+                            </div>
+                            
+                            <!-- Select Basic -->
+                            <div class="control-group">
+                              <label class="control-label" for="selectbasic">Proof of Ownership</label>
+                              <div class="controls">
+                                <select id="selectbasic" name="selectbasic" class="input-xlarge">
+                                  <option>Certificate of Origin (MCO)</option>
+                                  <option>Option two</option>
+                                </select>
+                              </div>
+                            </div>
+                            
+                            <!-- Text input-->
+                            <div class="control-group">
+                              <label class="control-label" for="textinput">Title #</label>
+                              <div class="controls">
+                                <input id="textinput" name="textinput" type="text" placeholder="" class="input-xlarge" />
+                              </div>
+                            </div>
+                            
+                            <!-- Select Basic -->
+                            <div class="control-group">
+                              <label class="control-label" for="selectbasic">Title State</label>
+                              <div class="controls">
+                                <select id="selectbasic" name="selectbasic" class="input-mini">
+                                  <option>CT</option>
+                                  <option>Option two</option>
+                                </select>
+                              </div>
+                            </div>
+                             </fieldset>
+                            <!-- Start Footer -->
+                             <div class="modal-footer">
+                            <!-- Buttons -->
+                            <div class="control-group">
+                              <label class="control-label" for="button1id"></label>
+                              <div class="controls">
+                                <button id="button1id" name="button1id" class="btn btn-secondary">Save</button>
+                                <button id="button2id" name="button2id" class="btn btn-secondary">Close</button>
+                              </div>
+                            </div>
+                             </div>
+                            </div> 
+                      </div>
+                    </div>
+                    </div>
+                    <!-- end edit section --> 
+                  </div>
+                  <!-- end content --> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end main section --> 
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">Last Login: 10 hours ago</div>
+        <div class="col-md-6">
+          <div class="pull-right"> &copy; 2001-2013 Dealertrack Technologies, Inc. All rights reserved. </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
