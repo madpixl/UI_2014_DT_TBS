@@ -1,5 +1,0 @@
-$(function()
-{
-    $("#basic").pickList();
-});
- 

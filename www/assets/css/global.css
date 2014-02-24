@@ -1,13 +1,14 @@
-@import url("/assets/css/vendor/bootstrap/bootstrap.min.css");
 @import url("/assets/css/vendor/jquery/jquery-ui.css");
+@import url("/assets/css/vendor/bootstrap/bootstrap.min.css");
 @import url("/assets/css/vendor/font-awesome.css");
+
 /*
 @import url("dealertrack.css");
 */
 @import url("/assets/css/dt/dealertrack.css");
 @import url("/assets/css/dt/nav-primary.css");
 @import url("/assets/css/dt/nav-secondary.css");
-
+@import url("/assets/components/slidepanel/css/slidepanel.css");
  
 
 /* ==========================================================================

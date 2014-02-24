@@ -1,23 +1,10 @@
 // Picklist Js
- 
-      addHiglightPlugin();	  
-	 
-	function addHiglightPlugin() {
-	  $.fn.highlight = function() {
-	     return this
-		                 .addClass("li-transfer-highlight")
-		                 .removeClass("li-transfer-highlight",100);
-	  }
-	}
-	
 	function add(sourceList,targetList) {
 		transfer($(sourceList+ " li.ui-selected"),targetList,sourceList);
 	}
-  	
 	function addAll(sourceList,targetList) {
 	  transfer($(sourceList+ " li:visible"),targetList,sourceList);
 	}
-  
 	function transfer(listItems,targetList,sourceList) {
 	  listItems.fadeOut(function() {
 	    $(this)

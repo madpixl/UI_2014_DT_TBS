@@ -6,18 +6,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <title>Dealertrack</title>
 <link rel="stylesheet" type="text/css" href="/assets/css/global.css" />
-<!--#include virtual="/assets/inc/global_js.inc" -->
+<!--#include virtual="/assets/inc/global_js.xhtml" -->
 </head>
 <body>
 <div class="site">
-   <!--#include virtual="/assets/inc/nav_global.inc" -->
+   <!--#include virtual="/assets/inc/nav_global.xhtml" -->
    <!--#include virtual="/assets/inc/global_header.inc" -->
   <section class="main">
     <div class="container">
       <div class="row">
         <div class="col-xs-2"> 
           <!-- left nav goes here... -->
-          <!--#include virtual="/assets/inc/nav_secondary.inc" -->
+          <!--#include virtual="/assets/inc/nav_secondary.xhtml" -->
           <!-- end left nav --> 
         </div>
         <div class="col-xs-10">
@@ -67,12 +67,13 @@
                           <fieldset>
                            <legend><h6>Edit Vehicle Information</h6></legend>
                             <!-- Inquiry Input-->
+                             
                             <div class="control-group vin-search">
                               <label class="control-label" for="vin-lookup">VIN</label>
                               <div class="input-group">
                                 <input type="text" class="form-control input-xlarge" placeholder="4T4BE46K39R096580"  />
                                 <button onclick="return false"><i class="fa fa-search"></i></button>
-                                </div>
+                                </div> 
                             </div>
                              
                             <div class="control-group">
@@ -269,16 +270,7 @@
     </div>
     <!-- end main section --> 
   </section>
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">Last Login: 10 hours ago</div>
-        <div class="col-md-6">
-          <div class="pull-right"> &copy; 2001-2013 Dealertrack Technologies, Inc. All rights reserved. </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+ 
 </div>
 
 </body>
