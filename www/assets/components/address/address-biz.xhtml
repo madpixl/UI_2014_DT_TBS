@@ -1,0 +1,91 @@
+ <fieldset> 
+<label for="businessName">Name:</label>
+<input name="businessName" tabindex="-1" role="textbox" aria-disabled="true" aria-readonly="false" aria-multiline="false" type="text" maxlength="50" />
+<label for="fein">FEIN:</label>
+<input name="fein" tabindex="-1" role="textbox" aria-disabled="true" aria-readonly="false" aria-multiline="false" type="text" maxlength="50" />
+</fieldset>
+<fieldset id="customer1PrimaryAddressPanel" aria-hidden="false">
+  <legend>Business Address</legend>
+  
+    <label for="street1">Address 1:</label>
+    <input name="street1" tabindex="-1" role="textbox" aria-disabled="true" aria-readonly="false" aria-multiline="false" type="text" maxlength="35" />
+    <label for="street2">Address 2:</label>
+    <input name="street2" tabindex="-1" role="textbox" aria-disabled="true" aria-readonly="false" aria-multiline="false" type="text" size="55" maxlength="35" />
+    <label for="zip">Zip:</label>
+    <input name="zip" tabindex="-1" role="textbox" aria-disabled="true" aria-readonly="false" aria-multiline="false" type="text" maxlength="10" />
+    <label for="ownerCity">City:</label>
+    <input name="ownerCity" tabindex="-1" role="textbox" aria-disabled="true" aria-readonly="false" aria-multiline="false" type="text" maxlength="22" />
+    <label for="state">State:</label>
+    <select name="state" tabindex="-1" id="state" onchange="transactionChanged();" size="1">
+      <option value="" selected="selected">Select</option>
+      <option value="AK">AK</option>
+      <option value="AL">AL</option>
+      <option value="AR">AR</option>
+      <option value="AZ">AZ</option>
+      <option value="CA">CA</option>
+      <option value="CO">CO</option>
+      <option value="CT">CT</option>
+      <option value="DC">DC</option>
+      <option value="DE">DE</option>
+      <option value="FL">FL</option>
+      <option value="GA">GA</option>
+      <option value="HI">HI</option>
+      <option value="IA">IA</option>
+      <option value="ID">ID</option>
+      <option value="IL">IL</option>
+      <option value="IN">IN</option>
+      <option value="KS">KS</option>
+      <option value="KY">KY</option>
+      <option value="LA">LA</option>
+      <option value="MA">MA</option>
+      <option value="MD">MD</option>
+      <option value="ME">ME</option>
+      <option value="MI">MI</option>
+      <option value="MN">MN</option>
+      <option value="MO">MO</option>
+      <option value="MS">MS</option>
+      <option value="MT">MT</option>
+      <option value="NC">NC</option>
+      <option value="ND">ND</option>
+      <option value="NE">NE</option>
+      <option value="NH">NH</option>
+      <option value="NJ">NJ</option>
+      <option value="NM">NM</option>
+      <option value="NV">NV</option>
+      <option value="NY">NY</option>
+      <option value="OH">OH</option>
+      <option value="OK">OK</option>
+      <option value="OR">OR</option>
+      <option value="PA">PA</option>
+      <option value="PR">PR</option>
+      <option value="RI">RI</option>
+      <option value="SC">SC</option>
+      <option value="SD">SD</option>
+      <option value="TN">TN</option>
+      <option value="TX">TX</option>
+      <option value="UT">UT</option>
+      <option value="VA">VA</option>
+      <option value="VT">VT</option>
+      <option value="WA">WA</option>
+      <option value="WI">WI</option>
+      <option value="WV">WV</option>
+      <option value="WY">WY</option>
+    </select>
+  
+  <input name="customer1PrimaryAddressPanel_collapsed" tabindex="-1" type="hidden" value="false" />
+</fieldset>
+
+<fieldset id="owner1MailingSection" aria-hidden="false">
+  <legend>Mailing Address</legend>
+  
+    <label for="street1">Address 1:</label>
+    <input name="street1" tabindex="-1" role="textbox" aria-disabled="true" aria-readonly="false" aria-multiline="false" type="text" maxlength="35" />
+    <label for="street2">Address 2:</label>
+    <input name="street2" tabindex="-1" role="textbox" aria-disabled="true" aria-readonly="false" aria-multiline="false" type="text" size="55" maxlength="35" />
+    <label for="zip">Zip:</label>
+    <input name="zip" tabindex="-1" role="textbox" aria-disabled="true" aria-readonly="false" aria-multiline="false" type="text" maxlength="10" />
+    <label for="ownerCity">City:</label>
+    <input name="ownerCity" tabindex="-1" role="textbox" aria-disabled="true" aria-readonly="false" aria-multiline="false" type="text" maxlength="22" />
+    <label for="state">State:</label>  
+</fieldset>
+ 

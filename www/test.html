@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title> test</title>
+ 
+ <script type="text/javascript" src="/assets/js/vendor/jquery/jquery.js"></script>
+
+  
+  <style type='text/css'>
+ .ui-state-cool {
+     background-color:#ffff00;
+ }
+ .ui-state-disabled {
+     background-color:#ff0000 !important;
+ }
+  </style>
+  
+
+
+
+
+</head>
+<body>
+<div>
+    <button id="button-click" type="button">Click to Enable</button>
+    <input class="ui-state-disabled ui-state-cool" id="input-disabled" disabled="disabled" />
+</div>
+<script> 
+$("#button-click").on("click", function () {
+    if ($("#input-disabled").prop('disabled', 'true')) {
+        $("#input-disabled").removeAttr('disabled');
+        $("#input-disabled").removeClass("ui-state-disabled");
+    } else {
+        $("#input-disabled").attr('disabled', 'true');
+        $("#input-disabled").addClass("ui-state-disabled");
+    }
+});
+ 
+</script>
+  
+</body>
+
+</html>
+

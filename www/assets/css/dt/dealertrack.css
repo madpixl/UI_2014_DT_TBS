@@ -440,14 +440,146 @@ h6
 
 h2
 {
-  font-size:1.5em; 
+ /* font-size:1.5em; */
+ font-size: 2em;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6
+{
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   line-height: 1.1;
+   color: inherit
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small
+{
+   font-weight: normal;
+   line-height: 1;
+   color: #999
+}
+
+h1,
+h2,
+h3
+{
+   margin-top: 20px;
+   margin-bottom: 10px
+}
+
+h1 small,
+h2 small,
+h3 small,
+h1 .small,
+h2 .small,
+h3 .small
+{
+   font-size: 65%
+}
+
+h4,
+h5,
+h6
+{
+   margin-top: 10px;
+   margin-bottom: 10px
+}
+
+h4 small,
+h5 small,
+h6 small,
+h4 .small,
+h5 .small,
+h6 .small
+{
+   font-size: 75%
+}
+
+h1,
+.h1
+{
+   font-size: 2em
+}
+
+h2,
+.h2
+{
+   font-size: 1.8em
+}
+
+h3,
+.h3
+{
+   font-size: 1.6em
+}
+
+h4,
+.h4
+{
+   font-size: 1.2em
+}
+
+h5,
+.h5
+{
+   font-size: 1em
+}
+
+h6,
+.h6
+{
+   font-size: .8em
+}
+
+.page-header
+{
+   padding-bottom: 9px;
+   margin: 40px 0 20px;
+   border-bottom: 1px solid #eee
+}
+
+
+
 
  .main__content h3
 {
   font-size:1.2em;
   color:#5081A8;
 }
+
 
 @media (min-width:768px) {
 
@@ -510,8 +642,6 @@ header nav.primary ul.nav-tabs.nav-justified li.active>a
    margin-bottom: 10px;
    width: 100%
 }
-
-
 .container>.navbar-header,
 .container>.navbar-collapse
 {
@@ -1694,6 +1824,7 @@ header nav.primary ul.nav-tabs.nav-justified li.active>a
 .panel h4
 {
    margin: 7px 0
+   font-size: 1.6rem;
 }
 
 .panel h4 span
@@ -1708,7 +1839,28 @@ header nav.primary ul.nav-tabs.nav-justified li.active>a
    margin-bottom: 10px;
    width: 100%
 } 
-
+ .panel .summary-panel 
+ {
+  background-color:#e9eff4;
+  border-radius: 3px;
+ }
+ 
+.panel .panel-toggle a,
+.panel .panel-toggle a:link,
+.panel .panel-toggle a:active,
+.panel .panel-toggle a:visited
+{
+  margin:12px -8px;
+  font-size:14px;
+  font-weight:bold;
+  text-decoration:none;
+  color:#006699;
+}
+.panel .detail-container
+{
+ margin:4px 1em; 
+}
+ 
 .nav
 {
    margin-bottom: 0;
@@ -2374,4 +2526,18 @@ header nav.primary ul.nav-tabs.nav-justified li.active>a
    float: right !important;
    float: right
 }
+}
+
+/*Form */
+
+label
+{
+   display: inline-block;
+   margin-bottom: 5px;
+}
+
+.form-group  {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
 }

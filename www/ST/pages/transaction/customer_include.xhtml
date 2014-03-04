@@ -7,8 +7,10 @@
     </div>
   </div>
   <!-- content -->
-  <div>
-    <div class="clearfix col-xs-12">
+  <div class="detail-container">
+  <h4>Owner</h4>
+    <div class="clearfix col-xs-12 summary-panel ">
+    
       <h5 id="customer-contact">Jeff Wamboldt</h5>
       <ul class="list-unstyled col-xs-4">
         <li id="address-1-summary">1791 Orchard Hill Rd</li>
@@ -21,48 +23,8 @@
       <div class="panel-toggle"> <a href="#edit-customer" data-toggle="collapse" class="btn-link  panel-collapse collapse in collapsed"> Edit Customer </a>
         <hr />
         <div id="edit-customer" class="collapse">
-          <div class="form-horizontal">
-            <fieldset id="contact">
-              <legend>
-              <h6>Edit Customer Information</h6>
-              </legend>
-              <!-- Inquiry Input-->
-              <div class="control-group dms-search">
-                <label class="control-label" for="dms-lookup">Customer ID</label>
-                <div class="input-group">
-                  <input type="text" class="form-control input-xlarge" placeholder="1234"  />
-                  <button onclick="return false"><i class="fa fa-search"></i></button>
-                </div>
-              </div>
-              <fieldset id="contact-name">
-              <legend>Contact Name:</legend>
-              <div class="control-group">
-                <label class="control-label" for="fname">First Name</label>
-                <div class="controls">
-                  <input id="fname" name="fname" type="text" placeholder="First Name" class="input-small" />
-                </div>
-              </div>
-              <div class="control-group">
-                <label class="control-label" for="lname">Last Name</label>
-                <div class="controls">
-                  <input id="lname" name="lname" type="text" placeholder="Last Name" class="input-large" />
-                </div>
-              </div>
-              </fieldset>
-              
-              <fieldset id="owner-lessee">
-              <a name="#owner-lessee"></a>
-               <legend>Owner Lessee</legend>
-                 <div class="control-group">
-                <label class="control-label" for="fname">Owner/Lessee</label>
-                <div class="controls">
-                  <input id="ownerlessee" name="ownerlessee" type="text" placeholder="OwnerLessee" class="input-small" />
-                </div>
-              </div>
-              
-              </fieldset>
-            </fieldset>
-            
+          <div class="form-horizontal"> 
+            <!--#include virtual="/assets/components/address/address-biz.xhtml" -->
           </div>
         </div>
       </div>
