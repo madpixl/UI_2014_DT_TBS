@@ -1,0 +1,27 @@
+
+.toTop{
+	width:90px; 
+	height:90px;
+	padding:0px;
+	text-align:left; 
+	padding-top:4em;
+	text-align:center; 
+	background: none;
+	font-weight: bold;
+	font-size:10px;
+	color: #444;
+	text-decoration: none;
+	border:none;
+	position:fixed;
+	bottom:-5px;
+	left:49%;
+	display:none;
+	background-image: url('/assets/components/toTop/img/Up.png') ;
+	background-repeat:no-repeat;
+	background-position:center bottom;
+	margin-bottom:0;
+	padding-bottom:0;
+}
+.toTop:hover {
+	text-decoration:none;	 
+}

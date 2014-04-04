@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="/assets/js/vendor/jquery/jquery.js" 
+type="text/javascript"></script> 
+
+<script src="/assets/js/vendor/jquery/jquery-ui.js" 
+type="text/javascript"></script>
+
+<script src="/assets/js/vendor/bootstrap/dropdown.js" 
+type="text/javascript"></script> 
+
+<script src="/assets/js/vendor/bootstrap/collapse.js" 
+type="text/javascript"></script>
+
+<script src="/assets/js/vendor/bootstrap/transition.js" 
+type="text/javascript"></script>
+
+<script src="/assets/js/vendor/bootstrap/bootstrap-modal.js" 
+type="text/javascript"></script>
+
+<script src="/assets/components/slidepanel/js/slidepanel.js"
+type="text/javascript"></script>
+
+<script src="/assets/js/dt_js/affixmenu.js"
+type="text/javascript"></script>
+
+<script src="/assets/components/toTop/js/toTop.js"
+type="text/javascript"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<style>
+.vtabs
+{
+position:absolute;
+right:0;
+ 
+z-index:19999;
+display:block;	
+}
+#online
+{
+background-image:url(/assets/img/users.png);
+background-repeat:no-repeat;
+background-position:50%;	
+}
+#dmv
+{
+background-image:url(/assets/img/newreg.png);
+background-repeat:no-repeat;
+background-position:50%;	
+}
+#calendar-svg  
+{
+background-image:url(/assets/img/calendar.png);
+background-repeat:no-repeat;
+background-position:50%;	
+}
+#auto-svg
+{
+background-image:url(/assets/img/car.png);
+background-repeat:no-repeat;	
+}
+
+.vtabs span a{
+padding:4px;
+color:#ffffff;
+font-size:6px;
+display:block;
+line-height:30px;
+width:30px;
+height:30px;
+border-top-color:#eeeeee;	
+border-bottom-color:#111111;	
+ 
+ }
+ .vtabs span {
+border-radius:3px;
+border:solid 1px #eee;		 
+width:36px;
+height:36px;
+opacity:80; 
+display:block;
+clear:both;
+text-align:right;
+float:right;
+padding-right:0;
+background-color:#00549f;
+ }
+ 
+ 
+/* 
+.vtabs span:hover
+{
+width:42px;	
+background-color:#FD3;
+}
+*/
+</style>
+</head>
+<body>
+
+
+<div class="vtabs"> 
+  
+        <span title="inventory">
+        <a id="auto-svg" class="" href="#"></a>
+        </span>
+        
+        <span title="due_date">
+        <a id="calendar-svg" class="" href="#">2</a>
+        </span>
+        
+        <span title="dmv">
+        <a id=dmv class="" href="#"></a>
+        </span> 
+        
+        <span title="Who's online">
+        <a id="online" class="" href="#"></a>
+        </span>
+        
+        <span title="ftp">
+        <a class="" href="#"></a>
+        </span>
+ 
+  </div>
+  <script>
+ $(".vtabs span").mouseover(function(e) {
+ $(this).animate({
+     width: "40px",
+  }, 100 );  
+  });
+  $(".vtabs span").mouseout(function(e) {
+ $(this).animate({
+     width: "36px"
+  }, 100 );  
+  });
+  </script>
+</body>
+</html>

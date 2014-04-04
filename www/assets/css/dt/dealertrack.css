@@ -16,6 +16,17 @@
        local("HelveticaNeue-Light"),  
        url('/assets/font/HelveticaNeueLight.ttf');
 }
+
+body 
+{
+   color: #454545;
+   background-color: #d7d7d7;
+   font-family: "Helvetica Neue", "helvetica-neue-light", Helvetica, Arial, sans-serif;
+   overflow-y:scroll;
+   padding-right:10px;
+}
+ 
+
  
 audio, canvas, video
 {
@@ -131,13 +142,7 @@ textarea
   -moz-box-sizing: border-box;
   box-sizing: border-box
 }
-body 
-{
-   color: #454545;
-   background-color: #d7d7d7;
-   font-family: "Helvetica Neue", "helvetica-neue-light", Helvetica, Arial, sans-serif;
-  
-}
+
 /*fonts */
 label
 {
@@ -157,14 +162,7 @@ header .navbar-search
   height: 100%;
   margin: 1em;
 }
-header
-{
-  height: 185px;
-  background-color: #ebebe9;
-  width: auto;
-  margin: 0;
-  padding-top: 2em;
-}
+
 img.navbar-brand
 {
   position: absolute;
@@ -272,10 +270,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', end
 
 header
 {
-   height: 160px;
+   height: 15rem;
    background-color: #ebebe9;
    -webkit-box-shadow: 0 0 15px 3px #999;
-   box-shadow: 0 0 15px 3px #999
+   box-shadow: 0 0 15px 3px #999;
+   width: auto;
+   margin: 0;
+  padding-top: 2em;
+  
 }
 
 header .site-search
@@ -408,8 +410,8 @@ h1
 {
    background: #fff;
    border: 1px solid #bfbfbf;
-   padding: 15px;
-   margin-top: 20px
+   padding: 1.4em;
+   margin-bottom: 1 rem;
 }
 
 .main .main__content h1:first-child
@@ -1444,15 +1446,14 @@ header nav.primary ul.nav-tabs.nav-justified li.active>a
    cursor: not-allowed
 }
 
-.label
+ .label, label
 {
-   display: inline;
+   display: inline-block;
    padding: .2em .6em .3em;
-   font-size: 75%;
-   font-weight: bold;
+   font-size: 1em;
+   font-weight: normal;
    line-height: 1;
-   color: #fff;
-   text-align: center;
+    text-align: center;
    white-space: nowrap;
    vertical-align: baseline;
    border-radius: .25em
@@ -1630,26 +1631,6 @@ a.list-group-item.active>.badge,
    border-right: none
 }
  
- 
-header .site-search input
-{
-   padding-right: 25px
-}
-
-header .site-search button
-{
-   position: absolute;
-   right: 5px;
-   top: 4px;
-   background: transparent;
-   border: none
-}
-
-header .site-search button i
-{
-   color: #0064a4
-}
-
 header nav.primary
 {
    margin-top: 28px
@@ -1744,24 +1725,6 @@ header nav.primary ul.nav-tabs.nav-justified li .dropdown-menu li.dropdown--divi
 {
    margin: 2px 15px;
    border-bottom: 1px dotted #555
-}
-
-.main .main__content
-{
-   background: #fff;
-   border: 1px solid #bfbfbf;
-   padding: 15px;
-   margin-top: 20px
-}
-
-.main .main__content h1:first-child
-{
-   margin-top: 0
-}
-
-.main .main__content .panel:last-child
-{
-   margin-bottom: 0
 }
 
 footer
@@ -2530,14 +2493,53 @@ header nav.primary ul.nav-tabs.nav-justified li.active>a
 
 /*Form */
 
-label
+
+.controls
 {
-   display: inline-block;
-   margin-bottom: 5px;
+display:inline-block;
+padding-top:7px;
+ 
+}
+.main__content .form-group,
+.control-group 
+  {
+      display: inline-block;
+      width:100%;
+	  clear:both;
+	  margin-bottom:.5em;
+	  float:left;
+	  
 }
 
-.form-group  {
-      display: inline-block;
-      margin-bottom: 0;
-      vertical-align: middle;
+.main__content .vin-search
+{
+  /* margin-top: 36px;*/
+   position: relative
+}
+
+.main__content .vin-search input
+{
+   padding-right: 25px
+}
+
+.main__content .vin-search button
+{
+   position: absolute;
+   right: 5px;
+   top: 4px;
+   background: transparent;
+   border: none
+}
+
+.main__content .vin-search button i
+{
+   color: #0064a4
+}
+.main__content label
+{
+   display: inline-block;
+   text-align:right;
+   width:12em;
+   vertical-align:top;
+   
 }

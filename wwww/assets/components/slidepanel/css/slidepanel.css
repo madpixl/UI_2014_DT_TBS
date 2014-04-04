@@ -1,0 +1,39 @@
+   .slide-button {
+    position:absolute;
+    z-index:2000;
+     top:250px;
+     
+    right:1px;
+   }
+  .slide-panel img{
+    width:50%; 
+    margin:3em 1em;
+    border: none; 
+  }
+  .slide-panel {
+    margin:auto;
+    position:absolute;
+    z-index:1000;
+    top:0;
+	display:none;
+    text-align:center;
+    padding:140px 2em;
+    width: 100%;
+    left:100%;
+    bottom:0;
+     border: 2px solid #ccaa66;
+    background-color:#aaaaaa;
+	 
+  }
+.show-pos {
+    right:0px;
+	width:0;
+}
+.brand{
+ left:125px; 
+ position:absolute;
+}
+button.highlight {
+background-image:url(/assets/img/car-alert.png);
+
+}

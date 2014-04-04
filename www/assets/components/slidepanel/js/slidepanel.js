@@ -7,18 +7,21 @@ function slideView(dashXPos){
    if ($(".slide-panel").hasClass("dash-visible")) {
        $(".slide-panel").animate({
        left: + (collapseBack+"")
-     },'slow'); 
+     },'slow',"",function() {
+	     $(this).css("display","none");
+	 }
+	 ); 
      $(".slide-panel").removeClass("dash-visible")
-     $(".slide-button").text("View Dash Panel");
+    //$(".slide-button").text("View Dash Panel");
      $("body").css("overflow","");    
    } else {
-    $(".slide-panel").animate({ 
-    
+	$(".slide-panel").css("display","block");
+    $(".slide-panel").animate({  
     //turn left offset int into a string and set left = "string"
        left: +  $(walignment).offset().left +""
      },'slow')
      $(".slide-panel").addClass("dash-visible")
-     $(".slide-button").text("Hide Dash Panel");
+    // $(".slide-button").text("Hide Dash Panel");
      $("body").css("overflow","hidden");  
   
    }

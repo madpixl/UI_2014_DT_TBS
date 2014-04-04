@@ -1,0 +1,64 @@
+.slide-tabs
+{
+	position:absolute;
+	right:14px;
+	top:40%;
+	z-index:19999;
+	display:block;	
+}
+#online
+{
+	background-image:url(/assets/img/users.png);
+	background-repeat:no-repeat;
+	background-position:50%;	
+}
+#dmv
+{
+	background-image:url(/assets/img/newreg.png);
+	background-repeat:no-repeat;
+	background-position:50%;	
+}
+#calendar-svg  
+{
+	background-image:url(/assets/img/calendar.png);
+	background-repeat:no-repeat;
+	background-position:50%;	
+}
+#auto-svg
+{
+	background-image:url(/assets/img/car.png);
+	background-repeat:no-repeat;	
+}
+
+.slide-tabs span a{
+	padding:4px;
+	color:#ffffff;
+	font-size:6px;
+	display:block;
+	line-height:30px;
+	width:33px;
+	height:33px;
+	border-top-color:#eeeeee;	
+	border-bottom-color:#111111;	 
+}
+.slide-tabs span 
+{
+	border-radius:3px;
+	border:solid 1px #eee;		 
+	width:36px;
+	height:36px;
+	opacity:80; 
+	display:block;
+	clear:both;
+	text-align:right;
+	float:right;
+	padding-right:0;
+	background-color:#00549f;
+ }
+/* 
+.slide-tabs span:hover
+{
+width:42px;	
+background-color:#FD3;
+}
+*/
